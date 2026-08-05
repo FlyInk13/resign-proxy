@@ -1,0 +1,13 @@
+services:
+  proxy:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data/ca:/app/data/ca     # CA хранится снаружи контейнера
+      - ./data/whitelist.txt:/app/data/whitelist.txt
+    environment:
+      PORT: "8080"
+      CA_DIR: /app/data/ca
+      WHITELIST_PATH: /app/data/whitelist.txt
+    restart: unless-stopped
