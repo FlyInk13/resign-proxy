@@ -37,7 +37,7 @@
 ### 1. Клонировать и запустить
 
 ```bash
-git clone <repo>
+git clone git@github.com:FlyInk13/resign-proxy.git
 cd resign-proxy
 docker compose up -d
 ```
