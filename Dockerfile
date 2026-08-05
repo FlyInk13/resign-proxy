@@ -11,6 +11,6 @@ COPY . .
 
 VOLUME /app/data
 
-EXPOSE 8080
+EXPOSE 8443
 
 CMD ["bun", "run", "src/index.ts"]

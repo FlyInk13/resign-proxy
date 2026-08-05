@@ -4,7 +4,7 @@ import { isWhitelisted } from "./whitelist.ts";
 import { inspectUpstream } from "./inspector.ts";
 import { getOrCreateCert } from "./cert-manager.ts";
 
-const PORT = parseInt(process.env.PORT ?? "8080");
+const PORT = parseInt(process.env.PORT ?? "8443");
 
 interface InspectionCacheEntry {
   isMintsifry: boolean;
